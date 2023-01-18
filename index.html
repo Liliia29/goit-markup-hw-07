@@ -34,7 +34,7 @@
           </ul>
         </nav>
 
-        <div class="container">
+        
           <button
             class="menu-btn js-open-menu"
             aria-expanded="false"
@@ -65,9 +65,9 @@
       
             <ul class="mobile-menu">
               <li class="mobile-menu-item">
-                <a href="#" class="mobile-menu-item link">Studio</a></li>
+                <a href="./index.html" class="mobile-menu-item link">Studio</a></li>
               <li class="mobile-menu-item">
-                <a href="#" class="mobile-menu-item link">Portfolio</a></li>
+                <a href="./portfolio.html" class="mobile-menu-item link">Portfolio</a></li>
               <li class="mobile-menu-item">
                 <a href="#" class="mobile-menu-item link">Contacts</a></li>
               
@@ -263,6 +263,7 @@
           <ul class="items">
             <li>
               <img
+              srcset="./images\03_desktop\what-are-we-doing\desktop-app.jpg 1x, ./images\03_desktop\what-are-we-doing\desktop-app@2x.jpg 2x"
                 width="360"
                 height="300"
                 src="./images/img.jpg"
@@ -271,6 +272,7 @@
             </li>
             <li>
               <img
+              srcset="./images\03_desktop\what-are-we-doing\mobile-app.jpg 1x, ./images\03_desktop\what-are-we-doing\mobile-app@2x.jpg 2x"
                 width="360"
                 height="300"
                 src="./images/img(1).jpg"
@@ -279,6 +281,7 @@
             </li>
             <li>
               <img
+              srcset="./images\03_desktop\what-are-we-doing\ux-ui-design.jpg 1x, ./images\03_desktop\what-are-we-doing\ux-ui-design@2x.jpg 2x"
                 width="360"
                 height="300"
                 src="./images/img(2).jpg"
@@ -295,13 +298,17 @@
           <ul class="list">
             <li class="list-shadow">
               <div class="image">
-                <img
-                  width="264"
-                  height="260"
-                  src="./images/mark.jpg"
-                  alt="Product Designer"
+                <img 
+                srcset="./images\mark-guerrero.jpg  264w,              
+                 ./images\mark-guerrero@2x.jpg 528w"
+                sizes="(min-width: 1200px) 25vw,(min-width=768px) and (max-width: 1199px) 50vw,(max-width: 767px) 100vw, 100vw"
+                src="./images/mark.jpg" 
+                width="264"
+                height="260"
+                alt="Product Designer"
                 />
-              </div>
+              </div>   
+
               <div class="content">
                 <h3 class="title-team">Mark Guerrero</h3>
                 <p class="text-team">Product Designer</p>
@@ -348,13 +355,17 @@
             <li class="list-shadow">
               <div class="image">
                 <img
-                  width="264"
-                  height="260"
-                  src="./images/tom.jpg"
-                  alt="Frontend Developer"
+                srcset="
+                ./images\tom-ford.jpg 264w,
+                ./images\tom-ford@2x.jpg 528w"
+                sizes="(min-width: 1200px) 25vw,(min-width=768px) and (max-width: 1199px) 50vw,(max-width: 767px) 100vw, 100vw"
+                src="./images/tom.jpg"
+                width="264"
+                height="260"
+                alt="Frontend Developer"
                 />
               </div>
-              <div class="content">
+                <div class="content">
                 <h3 class="title-team">Tom Ford</h3>
                 <p class="text-team">Frontend Developer</p>
                 <ul class="icon-networks">
@@ -400,6 +411,10 @@
             <li class="list-shadow">
               <div class="image">
                 <img
+                srcset="
+                ./images\camila-garcia.jpg 264w,
+                ./images\camila-garcia@2x.jpg 528w"
+                sizes="(min-width: 1200px) 25vw,(min-width=768px) and (max-width: 1199px) 50vw,(max-width: 767px) 100vw, 100vw"
                   width="264"
                   height="260"
                   src="./images/camila.jpg"
@@ -452,6 +467,10 @@
             <li class="list-shadow">
               <div class="image">
                 <img
+                srcset="
+                ./images\daniel-wilson.jpg 264w,
+                ./images\daniel-wilson@2x.jpg 528w"
+                sizes="(min-width: 1200px) 25vw,(min-width=768px) and (max-width: 1199px) 50vw,(max-width: 767px) 100vw, 100vw"
                   width="264"
                   height="260"
                   src="./images/daniel.jpg"
@@ -621,6 +640,13 @@
         </div>
       </div>
     </footer>
+    
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./modal.js"></script>
     <script src="./mobile-menu.js"></script>
   </body>
